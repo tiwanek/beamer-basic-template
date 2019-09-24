@@ -1,0 +1,60 @@
+\documentclass{beamer}
+ 
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+\usepackage{listings}
+\lstset{basicstyle=\tiny}
+
+\graphicspath{ {./} }
+ 
+\usetheme{default}
+\usecolortheme{seahorse} 
+ 
+\title{Title}
+\author{Tomasz Iwanek} 
+ 
+\begin{document}
+ 
+\frame{\titlepage}
+ 
+\section{Section} 
+ 
+\begin{frame}
+\frametitle{Items}
+\begin{itemize}
+\item one
+\item two
+\item three
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{graphics}
+\includegraphics[scale=1.0]{img/logo.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Listing}
+\lstinputlisting[language=SQL]{listing/create.sql}
+\end{frame}
+
+\begin{frame}
+\frametitle{Description}
+\begin{description}
+\item[one] desc 1
+\item[two] desc 2
+\end{description}
+\end{frame} 
+
+\begin{frame}
+\frametitle{URL}
+\url{https://google.com}
+\end{frame} 
+ 
+\end{document}
